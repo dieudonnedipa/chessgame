@@ -1,0 +1,18 @@
+class Car:
+    def __init__(self, model, color, speed):
+        self.model = model
+        self.color = color
+        self.speed = speed
+
+    def displayi(self):
+        print(f"Model : {self.model}, Color : {self.color}, Speed : {self.speed}km/h")
+
+    def accelerate(self, add_speed):
+        self.speed += add_speed
+        print(f"{self.model} speeds at {self.speed}km/h")
+
+car1 = Car("BMW", "Black", 120)
+car2 = Car("Ferarri", "Red", 150)
+
+car1.displayi()
+car2.accelerate(30)
